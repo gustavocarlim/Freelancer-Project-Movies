@@ -1,0 +1,17 @@
+.img {
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.5px;
+    margin: 5px;
+    margin-bottom: 0%;
+    width: 280px;
+    height: 400px;
+    transition: width 0.5s, height 0.5s;
+  }
+
+img:hover {
+    width: 285px;
+    height: 410px;
+    background-color: white;
+  }

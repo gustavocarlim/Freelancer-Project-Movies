@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { fetchMovies } from "./Services/Api";
+import { MovieType } from '../types/MovieType';
+import './movies.css'
 
 function Movies() {
   const [movies, setMovies] = useState([]);
@@ -19,14 +21,10 @@ function Movies() {
 
   return (
     <div>
-      <h1>Lista de Filmes</h1>
+      <h1>Estrelar</h1>
       <ul>
         {movies.map(movie => (
-          <li key={movie.id}>
-            <h2>{movie.title}</h2>
-            <p>{movie.description}</p>
-            <img src={movie.image} alt={movie.title} />
-          </li>
+            <img className="img" src={movie.image} alt={movie.title} />
         ))}
       </ul>
     </div>
