@@ -21,10 +21,10 @@ function Movies() {
 
   return (
     <div>
-      <h1>Estrelar</h1>
       <ul>
         {movies.map(movie => (
-          <img className="img" src={movie.image} alt={movie.title} key={movie.id} />
+          <img className="img" src={movie.image} alt={movie.title} key={movie.id}
+            />
         ))}
       </ul>
     </div>

@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/material-symbols-outlined": "^5.0.21",
+    "material-design-icons-iconfont": "^6.7.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

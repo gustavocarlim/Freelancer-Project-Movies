@@ -3,8 +3,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 1.5px;
-    margin: 5px;
-    margin-bottom: 0%;
+    margin-left: 35px;
+    margin-bottom: 10px;
     width: 308px;
     height: 440px;
     transition: width 0.5s, height 0.5s;
