@@ -5,13 +5,13 @@
     padding: 1.5px;
     margin: 5px;
     margin-bottom: 0%;
-    width: 280px;
-    height: 400px;
+    width: 308px;
+    height: 440px;
     transition: width 0.5s, height 0.5s;
   }
 
 img:hover {
-    width: 285px;
-    height: 410px;
+    width: 313px;
+    height: 451px;
     background-color: white;
   }

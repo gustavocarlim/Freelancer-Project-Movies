@@ -4,15 +4,15 @@ import { MovieType } from '../types/MovieType';
 import './movies.css'
 
 function Movies() {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState<MovieType[]>([]);
 
   useEffect(() => {
     const fetchMoviesData = async () => {
       try {
         const moviesData = await fetchMovies();
         setMovies(moviesData);
-      } catch (error) {
-        console.error('Erro ao buscar filmes:', error.message);
+      } catch (error: unknown) {
+        console.error('Erro ao buscar filmes:', error);
       }
     };
 
@@ -24,7 +24,7 @@ function Movies() {
       <h1>Estrelar</h1>
       <ul>
         {movies.map(movie => (
-            <img className="img" src={movie.image} alt={movie.title} />
+          <img className="img" src={movie.image} alt={movie.title} key={movie.id} />
         ))}
       </ul>
     </div>
