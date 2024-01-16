@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { fetchMovies } from "./Services/Api";
 import { MovieType } from '../types/MovieType';
-import './movies.css'
+import '../styles/movies.css'
+import Header from './Header';
 
 function Movies() {
   const [movies, setMovies] = useState<MovieType[]>([]);
@@ -21,10 +23,13 @@ function Movies() {
 
   return (
     <div>
+      <Header/>
       <ul>
         {movies.map(movie => (
+          <Link to={`/movies/${movie.id}`}>
           <img className="img" src={movie.image} alt={movie.title} key={movie.id}
             />
+          </Link>
         ))}
       </ul>
     </div>

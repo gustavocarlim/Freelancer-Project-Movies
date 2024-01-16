@@ -1,4 +1,4 @@
-import "./header.css"
+import "../styles/header.css"
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
 function Header () {
