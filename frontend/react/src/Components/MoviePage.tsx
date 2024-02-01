@@ -32,18 +32,30 @@ function MoviePage () {
       return <div>Loading...</div>;
     }
   
-    return (
-        <div>
-        <Header/>
-        <div className='title'>
-        <img className="img-page"src={movie.image} alt={movie.title} />
-        <div >{movie.title}</div>
-        <div>{movie.genre}</div>
-        <div>{movie.description}</div>
-        <div>{movie.type}</div>
-        <div>{movie.created_at}</div>
+    return (      
+     <div>
+          <Header/>      
+      <div className='teste'>
+        <img className="img-page"src={movie.image} alt={movie.title} /> 
+        <div className='painel'>
+           <div className='title' >{movie.title} / {movie.created_at}</div>
+           <div className='description'>{movie.description}</div>
+           <div className='genre'>{movie.genre}/{movie.type}</div>
+           <div className="star-rating">
+              <input type="radio" name='star'/>
+              <input type="radio" name='star'/>
+              <input type="radio" name='star'/>
+              <input type="radio" name='star'/>
+              <input type="radio" name='star'/>
+              <input type="radio" name='star'/>
+              <input type="radio" name='star'/>
+              <input type="radio" name='star'/>
+              <input type="radio" name='star'/>
+              <input type="radio" name='star'/>
+         </div>
+        </div>
       </div>
-      </div>
+     </div>
     );
 }
 
