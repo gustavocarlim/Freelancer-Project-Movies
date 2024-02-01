@@ -53,6 +53,19 @@ function MoviePage () {
               <input type="radio" name='star'/>
               <input type="radio" name='star'/>
          </div>
+          <label htmlFor="score">score: </label>
+          <select name="" id="">
+            <option value="">inassistível</option>
+            <option value="">lixo</option>
+            <option value="">bosta</option>
+            <option value="">ruim</option>
+            <option value="">assistível</option>
+            <option value="">mim diverti</option>
+            <option value="">bonzinho</option>
+            <option value="">bom</option>
+            <option value="">bom pra caralho</option>
+            <option value="">perfeição</option>
+          </select>
         </div>
       </div>
      </div>
